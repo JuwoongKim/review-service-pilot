@@ -2,12 +2,14 @@ package com.example.reviewservicepilot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+@EnableJpaAuditing
 @SpringBootApplication
 public class ReviewServicePilotApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ReviewServicePilotApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(ReviewServicePilotApplication.class, args);
+	}
 
 }
