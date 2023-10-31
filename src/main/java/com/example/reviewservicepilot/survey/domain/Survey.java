@@ -38,4 +38,9 @@ public class Survey extends BaseEntity {
 		this.description = description;
 		this.type = type;
 	}
+
+	public void assignSurveyId(Long requesterId) {
+		this.requesterId = requesterId;
+	}
+
 }
