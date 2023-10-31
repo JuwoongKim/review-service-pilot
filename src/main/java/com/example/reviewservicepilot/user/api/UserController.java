@@ -39,9 +39,9 @@ public class UserController {
 
 	@GetMapping("/user")
 	public ResponseEntity<List<User>> signUp() {
-		List<User> userList = userService.getUsers();
+		List<User> users = userService.getUsers();
 
-		return new ResponseEntity<List<User>>(userList, HttpStatus.CREATED);
+		return new ResponseEntity<List<User>>(users, HttpStatus.CREATED);
 	}
 
 }
