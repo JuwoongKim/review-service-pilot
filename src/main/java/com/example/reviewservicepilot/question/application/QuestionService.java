@@ -17,7 +17,7 @@ public class QuestionService {
 
 	public boolean createQuestions(Long surveyId, List<Question> questions) {
 		questions.forEach(v -> v.assignSurveyId(surveyId));
-		List<Question> questions1 = questionRepository.saveAll(questions);
+		List<Question> createdQuestions = questionRepository.saveAll(questions);
 		return true;
 	}
 

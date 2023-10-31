@@ -22,7 +22,7 @@ public class Question extends BaseEntity {
 
 	String title;
 
-	String type;
+	QuestionType type;
 
 	String options;
 
@@ -33,7 +33,7 @@ public class Question extends BaseEntity {
 	protected Question() {
 	}
 
-	public Question(String title, String type, String options, int sequence, boolean isRequired) {
+	public Question(String title, QuestionType type, String options, int sequence, boolean isRequired) {
 		this.title = title;
 		this.type = type;
 		this.options = options;
