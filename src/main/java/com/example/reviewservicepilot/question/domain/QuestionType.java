@@ -1,5 +1,8 @@
 package com.example.reviewservicepilot.question.domain;
 
+import lombok.Getter;
+
+@Getter
 public enum QuestionType {
 	SUBJECTIVE("주관식"),
 	OBJECTIVE_UNIQUE("객관식_중복없음"),
@@ -14,7 +17,4 @@ public enum QuestionType {
 		this.displayName = displayName;
 	}
 
-	public String getDisplayName() {
-		return displayName;
-	}
 }

@@ -26,14 +26,14 @@ public class Survey extends BaseEntity {
 
 	String description;
 
-	String type;
+	SurveyType type;
 
 	LocalDateTime closedAt;
 
 	protected Survey() {
 	}
 
-	public Survey(String title, String description, String type) {
+	public Survey(String title, String description, SurveyType type) {
 		this.title = title;
 		this.description = description;
 		this.type = type;
