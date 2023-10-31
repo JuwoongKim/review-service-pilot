@@ -30,4 +30,9 @@ public class SurveyService {
 		return createdSurvey;
 	}
 
+	public List<Survey> getSurveysWithRequesterId(Long requesterId) {
+		List<Survey> surveys = surveyRepository.findAllByRequesterId(requesterId);
+
+		return surveys;
+	}
 }
